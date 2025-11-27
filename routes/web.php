@@ -69,3 +69,16 @@ Route::middleware(['auth'])->group(function () {
     Route::delete('/users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 
 });
+
+Route::get('/test-space', function () {
+    $filename = 'test-file.txt';
+    $content = 'Hola desde DigitalOcean Spaces!';
+
+    // Subir archivo al Space
+    Storage::disk('s3')->put($filename, $content);
+
+    // Obtener URL pública
+    $url = Storage::disk('s3')->url($filename);
+
+    return "Archivo subido correctamente. URL: <a href='$url' target='_blank'>$url</a>";
+});
