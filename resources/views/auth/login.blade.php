@@ -22,10 +22,10 @@
                     </div>
 
                     @error('login_error')
-                        <div class="red-text">{{ $message }}</div>
+                        <div class="blue-text">{{ $message }}</div>
                     @enderror
 
-                    <button type="submit" class="btn waves-effect waves-light red darken-2" style="width:100%;">Ingresar</button>
+                    <button type="submit" class="btn waves-effect waves-light blue darken-2" style="width:100%;">Ingresar</button>
                 </form>
             </div>
         </div>

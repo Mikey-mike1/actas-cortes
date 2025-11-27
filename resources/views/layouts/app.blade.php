@@ -18,7 +18,7 @@
         }
 
         nav {
-            background-color: #cc0000;
+            background-color: #007EBD;
         }
 
         nav .brand-logo {
@@ -35,13 +35,13 @@
         }
 
         .sidenav a {
-            color: #cc0000 !important;
+            color: #007EBD !important;
             font-weight: 500;
         }
 
         .sidenav .user-view .name,
         .sidenav .user-view .email {
-            color: #cc0000;
+            color: #007EBD;
         }
 
         .main-content {
@@ -49,7 +49,7 @@
         }
 
         .text-brand {
-            color: #cc0000;
+            color: #007EBD;
             font-weight: bold;
         }
     </style>
