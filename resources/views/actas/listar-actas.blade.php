@@ -78,8 +78,8 @@
                             <td>{{ $acta->jrv }}</td>
                             <td>{{ $acta->observaciones ?? '-' }}</td>
                             <td>
-@if($acta->pdf_url)
-    <a href="{{ $acta->pdf_url }}" target="_blank" class="btn-small grey darken-1">
+@if($acta->pdf_path)
+    <a href="{{ $acta->pdf_path }}" target="_blank" class="btn-small grey darken-1">
         <i class="material-icons left">picture_as_pdf</i> Ver PDF
     </a>
 @else
