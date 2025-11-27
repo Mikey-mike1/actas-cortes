@@ -86,7 +86,7 @@
     Sin PDF
 @endif
 
-                                @endif
+                             
                             </td>
                             <td>{{ $acta->created_at }}</td>
                             <td>{{ $acta->updated_at }}</td>
